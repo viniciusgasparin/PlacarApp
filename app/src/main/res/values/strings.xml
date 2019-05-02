@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Placar App</string>
+    <string name="title_club">CLUBS</string>
+    <string name="label_casa">Home</string>
+    <string name="hint_home">Type home name</string>
+    <string name="label_away">Away</string>
+    <string name="hint_Away">Type away name</string>
+    <string name="label_start">Start Game</string>
+    <string name="label_dev_by">Development by SCJ Fiap</string>
+</resources>
