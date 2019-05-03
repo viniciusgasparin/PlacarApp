@@ -2,8 +2,13 @@ package br.com.fiap.placarapp
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.AnimationUtils
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_placar.*
 
 class PlacarActivity : AppCompatActivity() {
@@ -39,5 +44,19 @@ class PlacarActivity : AppCompatActivity() {
             placarViewModel.goalAway()
         }
 
+        btRecomecarPartida.setOnClickListener {
+            placarViewModel.resetPlacar()
+        }
+
+        btShare.setOnClickListener {
+            shareWhatsApp()
+        }
+
     }
+
+    private fun shareWhatsApp() {
+
+    }
+
+
 }

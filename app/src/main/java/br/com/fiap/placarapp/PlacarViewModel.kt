@@ -9,6 +9,10 @@ class PlacarViewModel: ViewModel() {
     var goalAway: MutableLiveData<Int> = MutableLiveData()
 
     init {
+        startGame()
+    }
+
+    fun startGame() {
         goalAway.value = 0
         goalHome.value = 0
     }
@@ -19,5 +23,9 @@ class PlacarViewModel: ViewModel() {
 
     fun goalHome() {
         goalHome.value = goalHome.value?.plus(+1)
+    }
+
+    fun resetPlacar() {
+        startGame()
     }
 }
